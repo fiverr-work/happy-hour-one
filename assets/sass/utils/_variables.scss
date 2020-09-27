@@ -1,0 +1,70 @@
+// Colors
+$primary-color: #732dd9;
+$secondary-color: #ffbe00;
+$white-color: #ffffff;
+$black-color: #000000;
+$light-grey: #f9f9f9;
+$dark-grey: #4d4d4d;
+
+// Transparent background
+$primary-bg-trans-1: rgba($primary-color, 0.02);
+$primary-bg-trans-2: rgba($primary-color, 0.05);
+$black-bg-trans-1: rgba($black-color, 0.3);
+$black-bg-trans-2: rgba($black-color, 0.25);
+$black-bg-trans-3: rgba($black-color, 0.5);
+
+// Borders
+$border-1: solid 1px; // input, textarea, button   borders
+$border-2: solid 2px; // outline buttons border
+
+// Shadows
+$box-shadow-1: 0 10px 15px 0 rgba($black-color, 0.1); // navbar
+$box-shadow-2: 0 0 0 0.2rem rgba($primary-color, 0.25); // on focus
+$text-shadow-1: 0 4px 10px rgba($black-color, 0.25); // h1, p
+$text-shadow-1: 0 4px 10px rgba($black-color, 0.3); // h2
+
+// Font-Sizes
+$size-1: 12px;
+$size-2: 14px;
+$size-3: 18px;
+$size-4: 20px;
+$size-5: 24px;
+$size-6: 36px;
+$size-7: 48px;
+$size-8: 64px;
+
+// Font-Family
+$primary-light: "Poppins Light";
+$primary-regular: "Poppins Regular";
+$primary-medium: "Poppins Medium";
+$primary-SemiBold: "Poppins Semibold";
+$primary-bold: "Poppins Bold";
+
+$secondary-light: "Merriweather Light";
+$secondary-regular: "Merriweather Regular";
+$secondary-italic: "Merriweather Italic";
+$secondary-bold: "Merriweather Bold";
+$secondary-black: "Merriweather black";
+
+// Font Paths
+$primary-light-path: "../fonts/Poppins/Poppins-Light.ttf";
+$primary-regular-path: "../fonts/Poppins/Poppins-Regular.ttf";
+$primary-medium-path: "../fonts/Poppins/Poppins-Medium.ttf";
+$primary-SemiBold-path: "../fonts/Poppins/Poppins-SemiBold.ttf";
+$primary-bold-path: "../fonts/Poppins/Poppins-Bold.ttf";
+
+$secondary-light-path: "../fonts/Merriweather/Merriweather-Light.ttf";
+$secondary-regular-path: "../fonts/Merriweather/Merriweather-Regular.ttf";
+$secondary-italic-path: "../fonts/Merriweather/Merriweather-Medium.ttf";
+$secondary-bold-path: "../fonts/Merriweather/Merriweather-Bold.ttf";
+$secondary-black-path: "../fonts/Merriweather/Merriweather-Black.ttf";
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Transition
+$duration-1: 300ms; // duration
+$timing-1: ease-in-out; //timing function

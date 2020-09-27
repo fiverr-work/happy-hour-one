@@ -1,0 +1,171 @@
+/*=== Import Fonts ===*/
+@include font-face($primary-light, $primary-light-path);
+@include font-face($primary-regular, $primary-regular-path);
+@include font-face($primary-medium, $primary-medium-path);
+@include font-face($primary-SemiBold, $primary-SemiBold-path);
+@include font-face($primary-bold, $primary-bold-path);
+
+@include font-face($secondary-light, $secondary-light-path);
+@include font-face($secondary-regular, $secondary-regular-path);
+@include font-face($secondary-italic, $secondary-italic-path);
+@include font-face($secondary-bold, $secondary-bold-path);
+@include font-face($secondary-black, $secondary-black-path);
+
+/*=== Typography Styling ===*/
+
+body {
+	font-family: $primary-regular;
+	font-size: $size-3;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: normal;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $secondary-bold;
+	font-weight: bold;
+}
+
+h4,
+h5,
+h6,
+button,
+input[type="submit"],
+a.btn,
+.nav-link.active {
+	font-family: $primary-SemiBold;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: $size-8;
+	line-height: 1.16;
+	letter-spacing: 1.28px;
+	@include for-size(xl-down) {
+		font-size: $size-7;
+		line-height: 1.62;
+		letter-spacing: 0.96px;
+	}
+	@include for-size(sm-down) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	font-size: $size-7;
+	line-height: 1.42;
+	letter-spacing: 0.96px;
+	@include for-size(lg-down) {
+		font-size: $size-6;
+		line-height: 1.62;
+		letter-spacing: 0.72px;
+	}
+	@include for-size(sm-down) {
+		font-size: $size-5;
+		letter-spacing: 0.48px;
+	}
+}
+
+h3 {
+	font-size: $size-6;
+	line-height: 1.89;
+	letter-spacing: 0.72px;
+	@include for-size(sm-down) {
+		font-size: $size-5;
+	}
+}
+
+h4 {
+	font-size: $size-5;
+	letter-spacing: 0.48px;
+
+	@include for-size(sm-down) {
+		font-size: $size-3;
+	}
+}
+
+h5 {
+	font-size: $size-3;
+	letter-spacing: 0.36px;
+}
+
+h6 {
+	font-size: $size-2;
+	letter-spacing: 0.26px;
+}
+
+button,
+input[type="submit"],
+a.btn {
+	font-size: $size-2;
+	letter-spacing: 0.14px;
+}
+
+a {
+	font-family: $primary-regular;
+	font-size: $size-2;
+}
+
+p {
+	font-family: $primary-regular;
+	font-size: $size-4;
+	line-height: 1.62;
+	letter-spacing: 0.48px;
+
+	&.larg {
+		font-size: $size-5;
+		line-height: 1.62;
+		letter-spacing: 0.48px;
+	}
+	&.regular {
+		font-size: $size-3;
+		letter-spacing: 0.36px;
+	}
+	&.small {
+		font-size: $size-2;
+		letter-spacing: 0.28px;
+	}
+	@include for-size(sm-down) {
+		font-size: $size-3;
+		letter-spacing: 0.36px;
+	}
+	@include for-size(sm-down) {
+		font-size: $size-2;
+		letter-spacing: 0.28px;
+	}
+}
+li {
+	font-family: $primary-regular;
+	font-size: $size-4;
+}
+label {
+	font-family: $primary-SemiBold;
+	font-size: $size-1;
+	font-weight: 600;
+	letter-spacing: 0.26px;
+
+	&.regular {
+		font-family: $primary-medium;
+		font-weight: 500;
+	}
+
+	a {
+		font-family: $primary-SemiBold;
+		color: $primary-color !important;
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+}
+
+.brand {
+	font-family: $primary-SemiBold;
+	font-size: $size-3;
+
+	&:focus {
+		color: $secondary-color !important;
+	}
+}

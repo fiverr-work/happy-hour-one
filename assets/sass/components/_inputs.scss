@@ -1,0 +1,11 @@
+// Inputs & Placeholders Style
+input,
+textarea {
+	border: $border-1 rgba($primary-color, 0.5);
+	background-color: $white-color;
+	padding: 9.5px;
+	outline-color: $primary-color;
+	&[type="checkbox"]{
+		margin-right: 15px;
+	}
+}

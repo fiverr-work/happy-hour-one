@@ -1,0 +1,16 @@
+.text-white-sm {
+	@include for-size(lg-down) {
+		color: $white-color !important;
+	}
+	@include for-size(sm-down) {
+		color: $black-color !important;
+	}
+}
+
+.bg-primary {
+	background-color: $primary-bg-trans-2 !important;
+}
+
+.text-primary {
+	color: $primary-color !important;
+}

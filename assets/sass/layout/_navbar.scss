@@ -1,0 +1,123 @@
+@import "../components/menu-icon";
+
+.navbar {
+	background-color: transparent;
+	transition: background $duration-1 $timing-1, padding $duration-1 $timing-1;
+	padding-top: 32px;
+	&.on-scroll {
+		transition: background $duration-1 $timing-1, padding $duration-1 $timing-1;
+		padding-top: 8px;
+		box-shadow: $box-shadow-1;
+		background-color: $white-color;
+		.brand {
+			color: $black-color !important;
+		}
+	}
+	.brand {
+		@include flex(center, center);
+		img {
+			margin-right: 5px;
+		}
+		&:focus {
+			border-bottom: 0 !important;
+		}
+		&:hover {
+			color: $secondary-color;
+		}
+		&.is-active {
+			color: $black-color !important;
+			z-index: 10 !important;
+		}
+	}
+	.nav-content {
+		display: flex;
+		align-items: center;
+		.nav-link {
+			padding: 16px;
+
+			&:hover,
+			&.active {
+				color: $primary-color;
+			}
+		}
+		.language-switcher {
+			padding: 16px;
+			@include flex(center, center);
+			a {
+				padding: 0;
+				text-transform: uppercase;
+			}
+			.divider {
+				font-family: $primary-light;
+			}
+		}
+		& > a:last-child {
+			margin-left: 40px;
+		}
+	}
+	@include for-size(lg-down) {
+		.container {
+			max-width: 100%;
+			flex-wrap: nowrap;
+			min-height: 34px;
+		}
+		.nav-content {
+			flex: 2;
+			justify-content: space-evenly;
+			a.btn {
+				margin-left: 15px;
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+			.nav-link,
+			.language-switcher {
+				padding: 0;
+			}
+		}
+	}
+	@include for-size(sm-down) {
+		.brand {
+			font-size: $size-2;
+		}
+		.nav-content {
+			background: $white-color;
+			position: fixed;
+			top: 0;
+			right: -900px;
+			bottom: 0;
+			width: 100%;
+			flex-direction: column;
+			justify-content: center;
+			transition: right 400ms ease-in;
+			z-index: 9;
+			&.is-active {
+				right: 0;
+				transition: right 400ms ease-out;
+			}
+			& > * {
+				margin-bottom: 57px;
+			}
+			a.btn {
+				margin-left: 0;
+				padding-right: 26px;
+				padding-left: 26px;
+			}
+			.language-switcher {
+				a {
+					padding: 5px;
+				}
+			}
+		}
+		.menu-icon-wrapper {
+			display: block !important;
+
+			&.open {
+				position: fixed;
+				bottom: 10%;
+				top: auto;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}

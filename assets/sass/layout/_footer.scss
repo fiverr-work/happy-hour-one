@@ -1,0 +1,23 @@
+footer.footer {
+	background-color: $primary-bg-trans-2;
+	padding: 100px 0 52px;
+
+	.row {
+		& > div {
+			margin-bottom: 48px;
+			h5 {
+				text-transform: uppercase;
+				margin-bottom: 24px;
+			}
+			a {
+				&:hover {
+					color: $secondary-color;
+				}
+				&:not(:last-child) {
+					display: block;
+					margin-bottom: 14px;
+				}
+			}
+		}
+	}
+}
